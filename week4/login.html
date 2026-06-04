@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- ###///////////////bootstrap/////// -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- ###////////////////google fonts//////// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+
+
+
+  </head>
+  <body style="background-color: hsl(122, 87%, 22%)"
+    style="width: 100%; height: 100vh"
+    class="container vh-100 d-flex justify-content-center align-items-center gap-2 flex-column " >
+    <div>
+        <img src="Logo-NVIDIA.png" alt="NVIDIA Logo" width="auto" height="100px" style="display: block; margin: 0 auto;">
+        <h2 class="text-center" style="font-family: 'Changa One', cursive; color: white;">Welcome to NVIDIA</h2>
+    </div>
+
+
+  <!-- #####///////login form///////// -->
+    <form style="background-color: hsla(120, 100%, 99%, 0.931); border-radius: 10px;"
+      action="/Register.html" 
+      method="POST"
+      class=" row boarder ronded-1  p-4 round shadow, card d-flex flex-column gap-2 center w-auto mx-auto w-30"
+    >
+      <h2 class="text-center" style="font-family: 'Changa One', cursive; color: green;">login</h2>
+      <h7 class="text-muted" style='text-align: center'>Please enter your credentials</h7>
+      
+    
+    
+      <!-- ////email and password////// -->
+      <label for="Email" class="">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="Password" class="">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+        placeholder=" Enter your password"
+        minlength="6"
+        maxlength="12"
+        required
+      />
+
+
+      <!-- /////button/////// -->   
+      <div>
+        <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox" value="" />
+         <label for="checkbox" class="form-check-label">Remember me</label> 
+      </div>
+      
+      <button type="submit" class="btn btn-success" >Login</button>
+      <div class="bg-light p-2 rounded ">
+        <p class="text-muted small"><input type="checkbox" name="checkbox" value="" required />
+          By logging in, you agree to our <a href="/privacy.html" class="text-decoration-none" style="color: green;">Terms of Service</a> and <a href="/privacy.html" class="text-decoration-none" style="color: green;">Privacy Policy</a>.
+        </p>
+      </div>
+
+       
+    </form>
+    
+    <a href="Register.html" class="text-decoration-none" style="color: rgb(255, 255, 255);" text-align="center" 
+      ><u>Don't have an account? Sign up</u></a>
+  </body>
+
+  
+</html>
